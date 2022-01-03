@@ -1,0 +1,22 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "React Hooks: useState()",
+      "datetime": "December 14, 2021 8:27:00 PM",
+      "body": "De la librería \"react\": \n - useState: Valor primigéneo de una variable (por lo general empty strings, empty arrays, empty objects, null, false o true). Se le conoce como \"first source of truth\"  en el sentido que se \"bindea\" una variable de antemano  a un valor \"neutro\" para en el futuro \"cambiar el estado\" de tal variable y luego operar sobre ella (por lo general comuncación con la API) antes de \"resetear\" el estado de tal variable de nuevo a un valor por defecto neutro."
+    },
+    {
+      "id": 2,
+      "title": "React Hooks: useEffect()",
+      "datetime": "December 17, 2021 2:56:25 AM",
+      "body": "De la librería \"react\":\n - useEffect: Es un hook que nos permite \"autoejecutar\" código. La clave para manipular el funcionamiento de este hook está en el segundo argumento que recibe: de ser un empty array se ejecuta solo al cargar el sitio/ en cada reload o rerender (cambio en el DOM). Si el array contiene \"dependencias\", esto significa que cuando alguna de ellas cambie useEffect también correrá las instrucciones dadas. \n Como nota adicional y a tener en cuenta es importante entender que si cambiamos el estado de una variable presente en el DOM por dentro del hook, esto crearía un loop infinito ya que estaría provocando un re-trigger del mismo hook en cada ejecución del mismo."
+    },
+    {
+      "id": 3,
+      "title": "Nuevo Post de prueba",
+      "datetime": "December 17, 2021 2:56:53 AM",
+      "body": "Hola mama esto es un quilombo aiuda!!"
+    }
+  ]
+}
