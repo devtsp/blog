@@ -7,16 +7,14 @@ import { StoreProvider } from 'easy-peasy';
 import store from './store';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <StoreProvider store={store}>
-      <Router>
-        <Routes>
-          <Route path="/*" element={<App />} />
-        </Routes>
-      </Router>
-    </StoreProvider>
-  </React.StrictMode>,
-  document.getElementById('root')
+	<React.StrictMode>
+		<StoreProvider store={store}>
+			<Router>
+				<Routes>
+					<Route path="/*" element={<App />} />
+				</Routes>
+			</Router>
+		</StoreProvider>
+	</React.StrictMode>,
+	document.getElementById('root')
 );
-
-

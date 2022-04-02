@@ -1,19 +1,18 @@
-import Header from "./Header";
-import Nav from "./Nav";
-import Footer from "./Footer";
+import Header from './Header';
+import Nav from './Nav';
+import Footer from './Footer';
 
-import { Outlet } from "react-router-dom";
-
+import { Outlet } from 'react-router-dom';
 
 const Layout = () => {
-  return (
-    <div className="App">
-      <Header title="React Js Blog" />
-      <Nav />
-      <Outlet />
-      <Footer />
-    </div>
-  )
-}
+	return (
+		<div className="App">
+			<Header title="React Js Blog" />
+			<Nav />
+			<Outlet />
+			<Footer />
+		</div>
+	);
+};
 
-export default Layout
+export default Layout;
