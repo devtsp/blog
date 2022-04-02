@@ -1,6 +1,6 @@
 :root {
 	font-size: 16px;
-	background-color: white;
+	background-color: rgb(97, 97, 97);
 }
 
 * {
@@ -24,7 +24,7 @@
 
 body {
 	max-width: 800px;
-	min-width: 400px;
+	min-width: 360px;
 	background-color: rgb(230, 252, 238);
 	box-shadow: 0 0 20px -2px black;
 	margin: 0 auto;
@@ -86,14 +86,14 @@ nav {
 	color: white;
 	align-items: center;
 	display: flex;
-	flex-wrap: wrap;
 	min-height: 2.5rem;
 }
 
 /* ________________________ SEARCH */
 
 nav form {
-	flex-grow: 1;
+	margin-left: 1rem;
+	flex-shrink: 1;
 	justify-content: center;
 	display: flex;
 	justify-content: flex-start;
@@ -105,16 +105,14 @@ nav label {
 }
 
 nav input {
-	box-sizing: border-box;
-	min-width: 5rem;
 	width: 100%;
-	max-width: 300px;
+	min-width: 1rem;
+	box-sizing: border-box;
 	cursor: auto;
 	font-size: 1.2rem;
-	padding: 0 0 0 0.4rem;
+	padding-left: 0.4rem;
 	border: 1px solid grey;
 	border-radius: 4px;
-	margin-left: 1rem;
 }
 
 nav input::placeholder {
@@ -124,20 +122,20 @@ nav input::placeholder {
 
 /*  ______________________ BUTTONS  */
 ul {
+	margin-left: auto;
 	height: 2.5rem;
-	max-width: 20rem;
 	padding: 0px;
-	flex: 1 1 8rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin-right: 1rem;
 }
 
 li {
+	padding: 0 10px;
 	list-style: none;
 	display: inline-block;
 	text-align: center;
-	flex-grow: 1;
 	font-size: 1.4rem;
 	font-weight: 600;
 	height: 100%;
@@ -188,8 +186,16 @@ nav a:focus {
 	white-space: pre-wrap;
 }
 
+.no-match {
+	font-size: 1.5rem;
+	margin: 3rem;
+	font-style: italic;
+	color: rgba(0, 0, 0, 0.726);
+}
+
+/* ___________________ POST PAGE ______________________ */
+
 .deleteButton {
-	float: right;
 	padding: 0.2rem 1rem;
 	margin: 0.5rem;
 	background-color: rgb(236, 172, 172);
@@ -200,7 +206,6 @@ nav a:focus {
 .editButton {
 	padding: 0.2rem 1rem;
 	margin: 0.5rem;
-	float: right;
 	background-color: rgb(195, 229, 194);
 	border: none;
 	border-radius: 5px;
@@ -214,7 +219,7 @@ nav a:focus {
 /* _______________________ NEW POST ______________________________ */
 
 .newPost {
-	margin: 1rem;
+	margin: 2rem;
 }
 
 .newPost h1 {
@@ -283,8 +288,19 @@ nav a:focus {
 /* ________________________ABOUT_____________________________ */
 
 .about {
-	margin: 1rem;
-	padding: 1rem;
+	margin: 2rem;
+}
+
+.about h2 {
+	border-bottom: 1px solid rgb(175, 175, 175);
+}
+
+.about p {
+	margin-top: 5px;
+	padding: 1rem 2rem;
+	font-style: italic;
+	font-size: 1.1rem;
+	color: rgba(7, 7, 7, 0.815);
 }
 
 /* ______________________ FOOTER ____________________________ */
