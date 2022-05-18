@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import { StoreProvider } from 'easy-peasy';
+
 import store from './store';
+import './index.css';
+import App from './App';
 
 ReactDOM.render(
 	<React.StrictMode>

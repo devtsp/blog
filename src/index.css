@@ -1,6 +1,7 @@
 :root {
 	font-size: 16px;
-	background-color: rgb(97, 97, 97);
+	background-color: rgb(255, 255, 255);
+	width: 100vw;
 }
 
 * {
@@ -23,10 +24,8 @@
 }
 
 body {
-	max-width: 800px;
+	/* max-width: 800px; */
 	min-width: 360px;
-	background-color: rgb(230, 252, 238);
-	box-shadow: 0 0 20px -2px black;
 	margin: 0 auto;
 }
 
@@ -34,11 +33,6 @@ body {
 	display: flex;
 	flex-direction: column;
 	height: 100vh;
-}
-
-.flexAux {
-	flex-grow: 1;
-	overflow-y: auto;
 }
 
 ::-webkit-scrollbar {
@@ -52,6 +46,13 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
 	background: rgb(117, 117, 117);
+}
+
+.flexAux {
+	flex-grow: 1;
+	overflow-y: auto;
+	max-width: 800px;
+	margin: 2rem auto !important;
 }
 
 /* __________________  HEADER ______________________ */
@@ -84,9 +85,14 @@ body {
 nav {
 	background-color: rgb(77, 70, 70);
 	color: white;
+}
+
+.nav-contents {
+	max-width: 800px;
 	align-items: center;
 	display: flex;
-	min-height: 2.5rem;
+	min-height: 4rem;
+	margin: 0 auto;
 }
 
 /* ________________________ SEARCH */
@@ -152,6 +158,16 @@ nav a:focus {
 
 /* _____________________ FEED _____________________________ */
 
+.Feed h1 {
+	font-size: 1.8rem;
+	border-bottom: 1px solid darkorange;
+	padding-bottom: 0.4rem;
+}
+
+article:nth-child(1) {
+	margin-top: 0 !important;
+}
+
 .statusMsg {
 	margin: 2rem;
 	text-align: center;
@@ -164,16 +180,29 @@ nav a:focus {
 }
 
 .post {
-	display: inline-block;
-	width: calc(100% - 2rem);
-	margin: 1rem;
-	border-bottom: 1px solid rgb(209, 209, 209);
+	width: 100%;
+	margin: auto;
+	border-bottom: 1px solid lightgray;
 	padding: 1rem;
+}
+
+.post-preview {
+	/* width: 90%; */
+	margin: auto;
+	border-bottom: 1px solid lightgray;
+	padding: 1rem;
+}
+
+.post-preview h2 {
+	display: inline-block;
+	font-size: 1.8rem;
+	color: teal;
 }
 
 .post h2 {
 	display: inline-block;
 	font-size: 1.8rem;
+	color: teal;
 }
 
 .postDate {
@@ -194,6 +223,10 @@ nav a:focus {
 }
 
 /* ___________________ POST PAGE ______________________ */
+
+.PostPage {
+	width: 100%;
+}
 
 .deleteButton {
 	padding: 0.2rem 1rem;
@@ -219,12 +252,13 @@ nav a:focus {
 /* _______________________ NEW POST ______________________________ */
 
 .newPost {
-	margin: 2rem;
+	width: 100%;
 }
 
 .newPost h1 {
-	font-size: 1.5rem;
-	border-bottom: 1px solid rgb(175, 175, 175);
+	font-size: 1.8rem;
+	padding-bottom: 0.4rem;
+	border-bottom: 1px solid darkorange;
 }
 
 .newPostForm {
@@ -292,7 +326,9 @@ nav a:focus {
 }
 
 .about h2 {
-	border-bottom: 1px solid rgb(175, 175, 175);
+	border-bottom: 1px solid darkorange;
+	font-size: 1.8rem;
+	padding-bottom: 0.4rem;
 }
 
 .about p {
@@ -307,10 +343,9 @@ nav a:focus {
 
 footer {
 	width: 100%;
-	max-width: 800px;
 	text-align: center;
-	background-color: rgb(77, 70, 70);
-	color: white;
+	background-color: lightgray;
+	color: black;
 	height: 3rem;
 	line-height: 3rem;
 }
