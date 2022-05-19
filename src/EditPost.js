@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
-import { format } from 'date-fns';
+// import { format } from 'date-fns';
 import { useStoreState, useStoreActions } from 'easy-peasy';
 
 const EditPost = () => {
@@ -25,8 +25,7 @@ const EditPost = () => {
 	}, [post, setEditTitle, setEditBody]);
 
 	const handleEdit = async id => {
-		const datetime = format(new Date(), 'MMMM dd, yyyy pp');
-		const updatedPost = { id, title: editTitle, datetime, body: editBody };
+		const updatedPost = { ...post, title: editTitle, body: editBody };
 		editPost(updatedPost);
 		navigate(`/post/${id}`);
 	};
@@ -52,7 +51,7 @@ const EditPost = () => {
 							value={editBody}
 							onChange={e => setEditBody(e.target.value)}
 						/>
-						<button type="button" onClick={() => handleEdit(post.id)}>
+						<button type="button" onClick={() => handleEdit(post._id)}>
 							Submit
 						</button>
 					</form>

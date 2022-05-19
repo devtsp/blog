@@ -158,6 +158,10 @@ nav a:focus {
 
 /* _____________________ FEED _____________________________ */
 
+.Feed {
+	min-width: 700px;
+}
+
 .Feed h1 {
 	font-size: 1.8rem;
 	border-bottom: 1px solid darkorange;
