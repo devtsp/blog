@@ -14,7 +14,7 @@ import Missing from './Missing';
 function App() {
 	const setPosts = useStoreActions(actions => actions.setPosts);
 	const { data, fetchError, isLoading } = useAxiosFetch(
-		'http://localhost:3500/posts'
+		'https://blog-server-devtsp.herokuapp.com/posts'
 	);
 
 	useEffect(() => {
