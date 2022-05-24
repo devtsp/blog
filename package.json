@@ -2,7 +2,7 @@
 	"name": "blog",
 	"version": "0.1.0",
 	"private": false,
-	"homepage": "https://devtsp.github.io/blog",
+	"homepage": "https://devtsp.github.io/blog-client",
 	"dependencies": {
 		"axios": "^0.24.0",
 		"date-fns": "^2.27.0",
