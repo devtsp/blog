@@ -36,11 +36,11 @@ body {
 }
 
 ::-webkit-scrollbar {
-	width: 11px;
+	width: 8px;
 }
 
 ::-webkit-scrollbar-thumb {
-	background: rgb(161, 173, 160);
+	background: rgb(114, 116, 114);
 	border-radius: 10px;
 }
 
@@ -52,7 +52,9 @@ body {
 	flex-grow: 1;
 	overflow-y: auto;
 	max-width: 800px;
-	margin: 2rem auto !important;
+	width: 100%;
+	padding: 2rem;
+	margin: auto;
 }
 
 /* __________________  HEADER ______________________ */
@@ -91,7 +93,7 @@ nav {
 	max-width: 800px;
 	align-items: center;
 	display: flex;
-	min-height: 4rem;
+	min-height: 3rem;
 	margin: 0 auto;
 }
 
@@ -157,10 +159,6 @@ nav a:focus {
 }
 
 /* _____________________ FEED _____________________________ */
-
-.Feed {
-	min-width: 700px;
-}
 
 .Feed h1 {
 	font-size: 1.8rem;
@@ -325,10 +323,6 @@ article:nth-child(1) {
 
 /* ________________________ABOUT_____________________________ */
 
-.about {
-	margin: 2rem;
-}
-
 .about h2 {
 	border-bottom: 1px solid darkorange;
 	font-size: 1.8rem;
@@ -360,4 +354,16 @@ footer h1 {
 	line-height: 3rem;
 	font-size: 1.4rem;
 	font-weight: lighter;
+}
+
+/* ________________ BREAKPOINTS _________________ */
+
+@media all and (max-width: 500px) {
+	.flexAux {
+		padding: 0.4rem;
+	}
+
+	:root {
+		font-size: 12px;
+	}
 }
