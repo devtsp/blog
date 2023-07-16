@@ -14,7 +14,7 @@ import Missing from './Missing';
 function App() {
 	const setPosts = useStoreActions(actions => actions.setPosts);
 	const { data, fetchError, isLoading } = useAxiosFetch(
-		'https://blog-server-zlb1.onrender.com/'
+		'https://blog-server-zlb1.onrender.com/posts'
 	);
 
 	useEffect(() => {
